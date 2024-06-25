@@ -1,4 +1,4 @@
-function damage(characterToDamage, amount: number): number {
+function damage(characterToDamage: { life: number }, amount: number): number {
     characterToDamage.life -= amount;
     return characterToDamage.life;
 }
