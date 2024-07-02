@@ -88,3 +88,9 @@ button:focus-visible {
     background-color: #87f1ff;
   }
 }
+
+#myResult
+{
+color: rgb(0, 255, 115);
+
+}
