@@ -1,16 +1,56 @@
-function damage(characterToDamage : {life : number}, amount: number):number{
-    characterToDamage.life -= amount;
-    return characterToDamage.life;
-}
-const result: number = damage({ life: 100 }, 12);
+// function damage(characterToDamage : {life : number}, amount: number):number{
+//     characterToDamage.life -= amount;
+//     return characterToDamage.life;
+// }
+// let result: number = damage({ life: 100 }, 42);
 
-    const  element  = document.getElementById("myResult");
+
+type Person = {
+    name: string;
+    money: number;
+    age: number;
+}
+type child = Person;
+
+type Employer = Person & {
+    child?: child;
+}
+
+
+const EquipierN1: Employer = {
+    name: "Carl",
+    money: 2000,
+    age: 27,
     
-    // Vérifier que l'élément existe
-    if (element) {
-        // Afficher le nombre dans l'élément
-        element.textContent = result.toString();
-    }
+//const enfant1 : child ={
+// name: "Carl",
+// money: 2000,
+// age: 27, 
+// }
+}
+
+
+const result: any = EquipierN1;
+console.log(result);
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const element = document.getElementById("myResult");
+element.textContent = result.toString();
+
 console.log(result);
 
 
