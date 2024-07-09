@@ -26,8 +26,7 @@ type Equipment = {
 
 type Hero = Character & {
    pets?: Array<Pet>;
-   equipments?: Array<Equipment>;
-};
+   equipments?: Array<Equipment>};
 
 type Magician = Hero & WithMagic;
 

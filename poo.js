@@ -3,12 +3,16 @@ var Human = /** @class */ (function () {
         this.firstName = firstName;
         this.lastName = lastName;
     }
-    Human.prototype.getFullName = function () {
-        return "".concat(this.firstName).concat(this.lastName);
+    Human.prototype.setFullName = function () {
+        return "".concat(this.firstName, "  ").concat(this.lastName, " ");
     };
     return Human;
 }());
-var employeur = new Human("Jon", "Diki");
-var fullName = employeur.getFullName();
+// Création de l'instance
+var employeur = new Human("Jon", "DIKIZEYIKO");
+employeur.firstName = "John";
+// Using Method
+var fullName = employeur.setFullName();
 var elmt = document.getElementById("myResult");
 elmt.textContent = fullName.toString();
+console.log(fullName);
