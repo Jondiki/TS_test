@@ -17,7 +17,7 @@ class Employee extends Person{
 
 let Jon = new Employee("Diki",29);
 
- Jon.salary = 2500;
+Jon.salary = 2500;
 
 
 
