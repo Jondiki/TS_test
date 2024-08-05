@@ -10,23 +10,28 @@ type Person = {
     money: number;
     age: number;
 }
-type child = Person;
+type Child = Person & 
+{
+    ville: string;
+}
 
 type Employer = Person & {
-    child?: child;
+    child?: Child;
 }
 
 
 const EquipierN1: Employer = {
-    name: "Carl",
+    name: "Jon",
     money: 2000,
     age: 27,
     
-//const enfant1 : child ={
-// name: "Carl",
-// money: 2000,
-// age: 27, 
-// }
+    child:  {
+        
+         name: "Carl",
+         money: 2000,
+         age: 27,
+         ville: "New York",
+}
 }
 
 

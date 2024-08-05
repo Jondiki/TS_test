@@ -20,6 +20,7 @@ class Human {
 const employeur = new Human("Jon", "DIKIZEYIKO");
 
 employeur.firstName = "John";
+employeur.
 
 
 
