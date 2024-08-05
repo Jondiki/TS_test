@@ -12,7 +12,7 @@ type Person = {
 }
 type Child = Person & 
 {
-    ville: string;
+    villes: Array<string>;
 }
 
 type Employer = Person & {
@@ -22,21 +22,22 @@ type Employer = Person & {
 
 const EquipierN1: Employer = {
     name: "Jon",
-    money: 2000,
+    money: 2000000,
     age: 27,
     
     child:  {
         
          name: "Carl",
-         money: 2000,
-         age: 27,
-         ville: "New York",
+         money: 10000,
+         age: 7,
+        villes: ["Los-Angeles","Paris","New York"],
 }
 }
 
 
-const result: any = EquipierN1;
-console.log(result);
+const result: any = EquipierN1.child?.villes[1];
+const result2: any = EquipierN1.child?.money;
+console.log(result , result2);
  
 
 
