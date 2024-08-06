@@ -3,21 +3,28 @@
 //     return characterToDamage.life;
 // }
 // let result: number = damage({ life: 100 }, 42);
-var _a, _b;
 var EquipierN1 = {
     name: "Jon",
     money: 2000000,
     age: 27,
-    child: {
-        name: "Carl",
-        money: 10000,
-        age: 7,
-        villes: ["Los-Angeles", "Paris", "New York"],
-    }
+    child: [{
+            name: "Carl",
+            money: 80000,
+            age: 7,
+            villes: ["Los-Angeles", "Paris", "New York"],
+        }, {
+            name: "James",
+            money: 50000,
+            age: 5,
+            villes: ["Los-Angeles", "Paris", "New York", "London"],
+        }]
 };
-var result = (_a = EquipierN1.child) === null || _a === void 0 ? void 0 : _a.villes[1];
-var result2 = (_b = EquipierN1.child) === null || _b === void 0 ? void 0 : _b.money;
-console.log(result, result2);
-var element = document.getElementById("myResult");
-element.textContent = result.toString();
+var result = EquipierN1.child[1].name;
+var result2 = EquipierN1.child[1].money;
 console.log(result);
+console.log(result2);
+var element = document.getElementById("myResult");
+var element2 = document.getElementById("myResult2");
+element.textContent = result.toString();
+element2.textContent = result2.toString();
+//console.log(result);
