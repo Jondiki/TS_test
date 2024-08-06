@@ -23,7 +23,7 @@ type ShopBooleans = Shop<boolean>;
 // }
 
 
-const ShopAlphabet: ShopString = {
+const ShopAlphbt: ShopString = {
 
     name: "Alphabet",
     items: ["A", "B","C","D"],
