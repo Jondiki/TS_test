@@ -3,6 +3,11 @@ type Shop<T> = {
     items: Array<T>;
 }
 
+type Paire<U, M> =
+{
+    unite: U ;
+    disaine: M;
+}
 
 type ShopNumbers = Shop<number>;
 //     {
@@ -22,10 +27,22 @@ type ShopBooleans = Shop<boolean>;
 //     items: Array<boolean>
 // }
 
+type Pairesnumber = Paire<number, number>;
+interface Pairestring extends Paire<Array<string>, string>{
+
+}
+
 
 const ShopAlphbt: ShopString = {
 
     name: "Alphabet",
     items: ["A", "B","C","D"],
     
+}
+
+const DikiName: Pairestring = 
+{
+    unite: ["Jon", "elie", "Jul",],
+    disaine : "Diki",
+
 }
